@@ -5,8 +5,8 @@ export default function Home(){
     const navigation = useNavigation();
     return(
         <PaperProvider>
-            <ScrollView>
-                <View>
+            <ScrollView contentContainerStyle={styles.ScrollView}>
+                <View style={styles.container}>
                     <Text variant="headlineLarge">Headline Large</Text>
                     <Divider/>
                     <Text variant="bodyMedium">
@@ -35,3 +35,19 @@ export default function Home(){
         
     );
 }
+
+const styles = StyleSheet.create({
+    container : {
+        flexDirection : 'column',
+        backgroundColor : '#fff',
+        justifyContent : 'space-between',
+        padding :10
+    },
+    body : {
+        padding :8,
+        textAlign : 'justify'
+    },
+    ScrollView : {
+        flexGrow : 1,
+    }
+});
