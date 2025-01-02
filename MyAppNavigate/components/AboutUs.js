@@ -8,7 +8,7 @@ export default function AboutUs(){
             <ScrollView>
                 <View>
                     <Text variant="headlineLarge">Headline Large</Text>
-                    
+                    <Divider/>
                 </View>
             </ScrollView>
         </PaperProvider>
