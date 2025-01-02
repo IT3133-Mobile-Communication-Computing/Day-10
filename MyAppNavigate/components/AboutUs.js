@@ -7,6 +7,7 @@ export default function AboutUs(){
         <PaperProvider>
             <ScrollView>
                 <View>
+                    <Text variant="headlineLarge">Headline Large</Text>
                     
                 </View>
             </ScrollView>
