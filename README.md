@@ -68,4 +68,4 @@ Ensure you have the following installed:
 
 ## Output
 
-[Click here to watch the video](./)
+[Click here to watch the video](./MyAppNavigate/assets/output.mp4)
