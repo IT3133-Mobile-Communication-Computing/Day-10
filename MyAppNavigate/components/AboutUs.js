@@ -23,10 +23,10 @@ export default function AboutUs(){
                         Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
 
                     </Text>
-                    <Button>
+                    <Button mode="contained" onPress={() => navigation.navigate('contact')}>
                         Contact Us
                     </Button>
-                    <Button>
+                    <Button mode="contained" onPress={() => navigation.navigate('aboutus')}>
                         About Us
                     </Button>
                 </View>
