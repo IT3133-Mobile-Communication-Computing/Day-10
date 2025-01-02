@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { ScrollView, View } from "react-native";
-import { PaperProvider , Text } from "react-native-paper";
+import { ScrollView, View , StyleSheet, KeyboardAvoidingView} from "react-native";
+import { Button, PaperProvider , Text, TextInput , Divider} from "react-native-paper";
 
 export default function ContactUs(){
     const [name, setName] = useState();
+    const navigation = useNavigation();
     return(
         <PaperProvider>
             <KeyboardAvoidingView>
@@ -21,9 +22,29 @@ export default function ContactUs(){
                                 Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
                                 Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
                         </Text>
+                        <View>
+                            <TextInput lable="Name" mode='outlined' value={name} onChangeText={setName} />
+                        </View>
+                        <View>
+                            <TextInput label="Email" mode='outlined' keyboardType="email-address" />
+                        </View>
+                        <View>
+                            <TextInput label="Phone Number" mode='outlined' keyboardType="phone-pad" />
+                        </View>
+                        <View>
+                            <TextInput label="Message" mode='outlined' multiline numberOfLines={5} />
+                        </View>
+                        <View>
+                            <Button mode="contained" onPress={()=>navigation.navigate('aboutus')}>About Us</Button>
+                        </View>
+                        <Text>{name}</Text>
+                    </View>
+                    <View>
+                        <Text> MyApp © 2024 </Text>
                     </View>
                 </View>
             </ScrollView>
+            </KeyboardAvoidingView>
         </PaperProvider>
     );
 }
