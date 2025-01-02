@@ -23,6 +23,12 @@ export default function AboutUs(){
                         Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
 
                     </Text>
+                    <Button>
+                        Contact Us
+                    </Button>
+                    <Button>
+                        About Us
+                    </Button>
                 </View>
             </ScrollView>
         </PaperProvider>
