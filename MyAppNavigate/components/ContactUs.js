@@ -6,6 +6,7 @@ export default function ContactUs(){
     const [name, setName] = useState();
     return(
         <PaperProvider>
+            <KeyboardAvoidingView>
             <ScrollView>
                 <View>
                     <View>
